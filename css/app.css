@@ -1,70 +1,67 @@
 /********** Base styles **********/
 * {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
+  box-sizing: border-box; }
 body {
   font-family: 'Lato', sans-serif; }
+
+p {
+  margin: 60px 0 0 0;
+  padding: 0 5px 5px 5px;}
+
+.center-text {
+  text-align: center; }
+
+.container {
+  margin: 0 auto;
+  width: 95%; }
+
+.card {
+  background-color: #efefef;
+  border: 1px solid #ccc;
+  position: relative; }
+
+.title-box {
+  background-color: #dfdfdf;
+  padding: 5px;
+  margin: 0;
+  width: 200px;
+  position: absolute;
+    right: 0;
+    top: 0; }
 
 .row {
   width: 100%; }
 
 /* Large */
-@media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left; }
-  .col-lg-1 {
-    width: 8.33%; }
-  .col-lg-2 {
-    width: 16.66%; }
-  .col-lg-3 {
-    width: 25%; }
+@media (min-width: 992px) {
   .col-lg-4 {
-    width: 33.33%; }
-  .col-lg-5 {
-    width: 41.66%; }
-  .col-lg-6 {
+    float: left;
+    padding-right: 10px;
+    width: 33.333%; }
+    .col-lg-4:last-child {
+      padding: 0; }
+}
+
+/* Medium */
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left; }
+
+  .col-md-6 {
+    padding-right: 20px;
     width: 50%; }
-  .col-lg-7 {
-    width: 58.33%; }
-  .col-lg-8 {
-    width: 66.66%; }
-  .col-lg-9 {
-    width: 74.99%; }
-  .col-lg-10 {
-    width: 83.33%; }
-  .col-lg-11 {
-    width: 91.66%; }
-  .col-lg-12 {
+    .col-md-6:nth-child(2) {
+      padding: 0; }
+
+  .col-md-12 {
+    margin-top: 20px;
     width: 100%; }
 }
-/* Medium */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float: left; }
-  .col-md-1 {
-    width: 8.33%; }
-  .col-md-2 {
-    width: 16.66%; }
-  .col-md-3 {
-    width: 25%; }
-  .col-md-4 {
-    width: 33.33%; }
-  .col-md-5 {
-    width: 41.66%; }
-  .col-md-6 {
-    width: 50%; }
-  .col-md-7 {
-    width: 58.33%; }
-  .col-md-8 {
-    width: 66.66%; }
-  .col-md-9 {
-    width: 74.99%; }
-  .col-md-10 {
-    width: 83.33%; }
-  .col-md-11 {
-    width: 91.66%; }
-  .col-md-12 {
-    width: 100%; }
+
+/* Small (Stacked) */
+@media (max-width: 767px) {
+  .col-sm-12 {
+    margin: 20px auto;
+    position: relative;
+    width: 85%; }
 }
