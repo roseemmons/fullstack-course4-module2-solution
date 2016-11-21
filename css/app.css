@@ -16,12 +16,14 @@ p {
   width: 95%; }
 
 .card {
-  background-color: #efefef;
-  border: 1px solid #ccc;
+  background-color: #F9B5AC;
+  border: 1px solid #987284;
   position: relative; }
 
 .title-box {
-  background-color: #dfdfdf;
+  background-color: #75B9BE;
+  border-left: 1px solid #987284;
+  border-bottom: 1px solid #987284;
   padding: 5px;
   margin: 0;
   width: 200px;
